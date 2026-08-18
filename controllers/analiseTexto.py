@@ -1,7 +1,6 @@
 import re
 
-
-def retornComposicao(input):
+def retornaComposicao(input):
     letras = ""
     numeros = ""
     caracteres = ""
