@@ -1,9 +1,4 @@
-import string
 from analiseTexto import retornComposicao
-# string.ascii_lowercase +  "11223"
-letras = "àáâãäçèéêìíîòóôõöùúûüýÿ" +  "$%¨&*()"
-composicaoTeste = retornComposicao(letras)
-
 
 def validaNome(componentes, campo):
     validacao = verificaComposicao(componentes)
@@ -33,7 +28,6 @@ def validaNome(componentes, campo):
         resultado = contratoOperacaoSemErro(campo, componentes)
     return resultado
 
-
 def verificaComposicao(composicao):
     return {
         "tamanhoMinimo": len(composicao["dado"]) < 3,
@@ -44,7 +38,6 @@ def verificaComposicao(composicao):
         "dadoValido": composicao["dado"].isalpha(),
     }
 
-
 def contratoOperacaoComErro(campo, componentes, mensagem):
     return {
         "campo": campo,
@@ -52,7 +45,6 @@ def contratoOperacaoComErro(campo, componentes, mensagem):
         "erro": True,
         "mensagem": mensagem,
     }
-
 
 def contratoOperacaoSemErro(campo, componentes):
     return {
@@ -62,6 +54,3 @@ def contratoOperacaoSemErro(campo, componentes):
         "mensagem": "",
     }
 
-
-validacao = validaNome(composicaoTeste, "nome")
-print(validacao)
