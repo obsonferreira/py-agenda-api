@@ -1,5 +1,5 @@
 [tool.black]
-line-length = 999
+line-length = 88
 skip-magic-trailing-comma = true
 include = '\.pyi?$'
 exclude = '''

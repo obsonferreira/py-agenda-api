@@ -26,6 +26,7 @@ dist/
 
 # Logs, local environment and operating-system files
 *.log
+tempCodeRunnerFile.py
 .env
 .env.*
 !.env.example
